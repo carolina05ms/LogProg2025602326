@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PrecioAutom"/>
+        <attribute name="authors" value="migue"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-02 11:18:16 p. m."/>
+        <attribute name="created" value="bWlndWU7REVTS1RPUC0xTUFBOTlFOzIwMjUtMDQtMDI7MTE6MDk6NTggcC4gbS47MzAyOA=="/>
+        <attribute name="edited" value="bWlndWU7REVTS1RPUC0xTUFBOTlFOzIwMjUtMDQtMDI7MTE6MTg6MTYgcC4gbS47MTszMTMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="edad" type="Integer" array="False" size=""/>
+            <output expression="&quot;Cual es tu edad?&quot;" newline="True"/>
+            <input variable="edad"/>
+            <if expression="edad&lt;4">
+                <then>
+                    <output expression="&quot;Tu entrada es totalmente GRATIS&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="edad &lt;= 18">
+                        <then>
+                            <output expression="&quot;Debes pagar $200&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Debes pagar $500&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
