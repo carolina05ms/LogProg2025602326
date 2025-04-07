@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Pizzeria"/>
+        <attribute name="authors" value="migue"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-07 09:24:20 a. m."/>
+        <attribute name="created" value="bWlndWU7REVTS1RPUC0xTUFBOTlFOzIwMjUtMDQtMDc7MDg6NDU6MjEgYS4gbS47MzAxNA=="/>
+        <attribute name="edited" value="bWlndWU7REVTS1RPUC0xTUFBOTlFOzIwMjUtMDQtMDc7MDk6MjQ6MjAgYS4gbS47MzszMTIx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="PizzaVeg" type="String" array="False" size=""/>
+            <declare name="ingrediente" type="String" array="False" size=""/>
+            <output expression="&quot;&#191;Quiere una Pizza vegetariana?&quot;" newline="True"/>
+            <input variable="PizzaVeg"/>
+            <if expression="PizzaVeg=&quot;si&quot;">
+                <then>
+                    <output expression="&quot;Ok, estos son nuestros ingredintes vegetarianos, elija uno&quot;" newline="True"/>
+                    <output expression="&quot;Pimiento&quot;" newline="True"/>
+                    <output expression="&quot;Tofu&quot;" newline="True"/>
+                    <input variable="ingrediente"/>
+                    <output expression="&quot;Ok, ser&#225; una pizza vegetariana con mozzarella, tomate y &quot; &amp; ingrediente" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Ok, estos son nuestros ingredientes no vegetarianos, elija uno&quot;" newline="True"/>
+                    <output expression="&quot;Peperoni&quot;" newline="True"/>
+                    <output expression="&quot;Jamon&quot;" newline="True"/>
+                    <output expression="&quot;Salmon&quot;" newline="True"/>
+                    <input variable="ingrediente"/>
+                    <output expression="&quot;Ok, ser&#225; una pizza no vegetariana con mozzarella, tomate y &quot; &amp; ingrediente" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
