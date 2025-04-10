@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="factorial"/>
+        <attribute name="authors" value="migue"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-09 10:11:26 p. m."/>
+        <attribute name="created" value="bWlndWU7REVTS1RPUC0xTUFBOTlFOzIwMjUtMDQtMDk7MDk6MzE6NTIgcC4gbS47MzAzMQ=="/>
+        <attribute name="edited" value="bWlndWU7REVTS1RPUC0xTUFBOTlFOzIwMjUtMDQtMDk7MTA6MTE6MjYgcC4gbS47MTszMTMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <declare name="factorial" type="Integer" array="False" size=""/>
+            <assign variable="factorial" expression="1"/>
+            <declare name="contador" type="Integer" array="False" size=""/>
+            <assign variable="contador" expression="1"/>
+            <output expression="&quot;Escriba un numero&quot;" newline="True"/>
+            <input variable="numero"/>
+            <if expression="numero&gt;=0">
+                <then/>
+                <else>
+                    <output expression="&quot;Su numero tiene que ser mayor a cero, menores que cero no tiene factorial &quot;" newline="True"/>
+                </else>
+            </if>
+            <while expression="contador&lt;=numero">
+                <assign variable="factorial" expression="factorial*contador"/>
+                <assign variable="contador" expression="contador+1"/>
+            </while>
+            <output expression="&quot;El numero factorial es &quot; &amp; factorial" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
